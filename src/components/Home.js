@@ -50,12 +50,18 @@ const Home = () => {
   }
 
   return (
-    <div className="home bg-gradient-to-b from-[#832388]  to-[#E3436B]  h-[95vh] flex flex-col text-gray-500 text-center relative ">
+    <div className="home bg-gradient-to-b from-[#832388]  to-[#E3436B]  h-[95vh] flex flex-col text-gray-500 text-center relative justify-center">
       <img
-        className="lg:max-w-[35vw] lg:h-[30vh] sm:max-w-[35vw] justify-center self-center lg:top-2 animate-custom-pulse my-element"
+        className="lg:w-[50vw] lg:h-[50vh] sm:max-w-[50vw] pt-10 justify-center self-center  animate-custom-pulse my-element"
         src={require("../images/logo.png")}
         alt=""
       />
+       <img
+    className="absolute w-full h-full object-fill"
+    src={require("../images/feathers.png")}
+    alt=""
+    style={{ top: 0, left: 0 }}
+  />
       <div className="mt-8 flex relative justify-center"></div>
     </div>
   );

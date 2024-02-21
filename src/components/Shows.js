@@ -15,7 +15,7 @@ const Shows = () => {
           </h1>
         </div>
         <div class="flex justify-around">
-          <div className="grid-cols-2 grid gap-12">
+          <div className="grid-cols-1  grid md:grid-cols-2 gap-12">
             <div className="flex flex-col gap-4 text-white">
               <h2>79rs Bout to Blow</h2>
               <iframe
@@ -77,7 +77,7 @@ const Shows = () => {
           </h1>
         </div>
         <div class="flex justify-around mb-10">
-          <div className="grid-cols-2 grid gap-7">
+          <div className="md:grid-cols-2 grid-cols-1 grid gap-7">
             <div className="flex flex-col gap-4 text-white">
               <h2>Live on KEXP (French edition)</h2>
 
