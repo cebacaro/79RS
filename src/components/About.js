@@ -2,18 +2,17 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="about bg-gradient-to-b from-[#832388]  to-[#E3336B]  h-[95vh] flex flex-col  items-center relative ">
-      {/* <img
-        className="lg:w-[30vw] lg:h-[30vh]  top-[30%]  absolute "
-        src={require("../images/logo_green.png")}
-        alt=""
-      /> */}
+    <div className="about   flex flex-col items-center  ">
+ 
 
-      <div className="  flex self-center justify-center flex-col  quicksand font-light text-gray-200  h-[70vh]  lg:w-[60vw] lg:h-[90vh] rounded-lg  m-auto  md:p-4  absolute backdrop-blur-[2px] ">
-        <h3 className=" fade font-aboreto font-light justify-left max-w-fit lg:text-[20px] mb-4 tracking-[6px]  text-left uppercase p-2 animate-fade-in  ">
+      <div className=" bg-gradient-to-b from-[#832388]  to-[#E3336B] w-full flex self-center justify-center flex-col  quicksand font-light text-gray-200    lg:w-[100vw] lg:h-[100vh]   m-auto  md:p-4  absolute backdrop-blur-[2px] ">
+        <h3 className=" fade font-aboreto font-light self-center max-w-fit lg:text-[20px] tracking-[6px]  text-left uppercase p-2 animate-fade-in  ">
           Our Story
         </h3>
-        <p className="p-2  md:text-[12px]  lg:text-[18px] text-[16px] sm:text-[10px] pt-3 ">
+        
+        <div className="max-w-[70vw]  self-center lg:p-11">
+
+        <p className="p-2  md:text-[12px]  lg:text-[18px] text-sm  pt-3 ">
           The <strong> 79rs Gang</strong>, is a remarkable musical collaboration
           that transcends boundaries and celebrates cultural heritage. It brings
           together Big Chief Romeo Bougere from the 9th Ward and Big Chief
@@ -25,7 +24,7 @@ const About = () => {
           Gras Indian music album titled "Fire On The Bayou" in 2013, which
           resonated deeply with their community.
         </p>
-        <p className="p-2  lg:text-[18px] text-[16px] sm:text-[10px]  ">
+        <p className="p-2  lg:text-[18px] text-sm   ">
           Today, with the collaboration of the talented writer and producer Eric
           Heigle, renowned for his work with acclaimed artists such as Arcade
           Fire, The Soul Rebels, and Lost Bayou Ramblers, alongside an
@@ -39,7 +38,7 @@ const About = () => {
           melodies from different parts of the world, enriching the music with
           global flavors.
         </p>
-        <p className="p-2  lg:text-[18px] text-[16px] sm:text-[10px]  ">
+        <p className="p-2  lg:text-[18px] text-sm   ">
           From dance floors to block parties, the irresistible beats of the 79rs
           Gang's music transcend geographical boundaries, inviting people from
           all walks of life to join in the celebration. Their music is a
@@ -48,6 +47,7 @@ const About = () => {
           journey of the 79rs Gang, as they honor past heroes, celebrate the art
           of sewing, and showcase the vibrant tapestry of their unique culture.
         </p>
+        </div>
       </div>
     </div>
   );

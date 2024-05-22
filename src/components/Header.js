@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="bg-[#832388] text-white font-light quicksand pt-2 h-[59px] text-[20px]">
-      <ul className="flex justify-end pr-6 gap-6">
+    <div className="bg-[#832388] text-white font-aboreto font-light uppercase quicksand pt-2 h-[59px] text-[20px]">
+      <ul className="flex justify-end pr-4 text-sm gap-4">
         <li className="hover:scale-110 duration-200">
           <NavLink
             exact="true"
@@ -20,11 +20,7 @@ const Header = () => {
             Our Story
           </NavLink>
         </li>
-        <li className="hover:scale-110 duration-200">
-          <NavLink to="press" className="Link  " activeclassname="active">
-            Press
-          </NavLink>
-        </li>
+        
         <li className="hover:scale-110 duration-200">
           <NavLink to="/shows" className="Link  " activeclassname="active">
             Videos

@@ -44,7 +44,7 @@ const Contact = () => {
         transition={{ duration: 0.8, easy: "easyOut" }}
         className="contact bg-[url('./images/romeo-1.png')] bg-opacity-40 bg-left   m-auto  h-[70vh] lg:w-[100vw] rounded-lg text-center items-center flex flex-col justify-center relative "
       >
-        <div className="overlay absolute lg:w-[100vw] lg:h-[70vh] md:h-[95vh] h-[95vh] w-[100%]  bg-black bg-opacity-50  " />
+        <div className="overlay absolute lg:w-[100vw] lg:h-[70vh] md:h-[95vh] h-[96vh] w-[100vw]  bg-black bg-opacity-50  " />
         {showMessage ? (
           <div id="success-message" className="flex top-1">
             <h4 className="text-center  text-3xl pb-4 text-white">
