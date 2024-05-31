@@ -7,11 +7,11 @@ const Home = () => {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
 
   useEffect(() => {
-    // Only trigger the animation on the first load
+  
     if (isFirstLoad) {
       setTimeout(() => {
         setIsFirstLoad(false);
-      }, 2000); // Duration of the fade-in animation
+      }, 2000); 
     }
   }, [isFirstLoad]);
   // const [token, setToken] = useState(null);
@@ -62,7 +62,7 @@ const Home = () => {
   return (
     <div className="home bg-gradient-to-b from-[#832388]  to-[#E3436B]  h-[95vh] flex flex-col text-gray-500 text-center relative justify-center">
      <img
-        className={`lg:w-[50vw] lg:h-[50vh] sm:max-w-[50vw] pt-10 justify-center self-center ${isFirstLoad ? 'fade-in' : 'my-element'}`}
+        className={`lg:w-[50vw] lg:h-[50vh] w-[70vw] h-[47vh]  pt-10 justify-center self-center ${isFirstLoad ? 'fade-in' : 'my-element'}`}
         src={logo}
         alt="Logo"
       />
