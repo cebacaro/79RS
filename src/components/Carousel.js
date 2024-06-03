@@ -27,7 +27,7 @@ const Carousel = () => {
   }, [currentSlide, slides.length]);
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 9000);
+    const interval = setInterval(nextSlide, 4000);
     return () => clearInterval(interval);
   }, [nextSlide]);
 
@@ -36,19 +36,26 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-[100vw] h-[95vh] items-center justify-center flex flex-col relative bg-gradient-to-b from-[#832388] to-[#E3436B] group ">
-      <h1 className="font-aboreto font-light lg:text-[20px] mb-4 tracking-[6px] w-[50vw]  uppercase p-2 font-light text-gray-200">
+    <div className="w-[100vw] h-[95vh] items-center justify-center flex flex-col relative bg-gradient-to-b from-[#832388] to-[#E3436B] group">
+      <h1 className="font-aboreto text-center lg:text-[20px] mb-4 tracking-[6px] w-[50vw] uppercase p-2 font-light text-gray-200">
         Gallery
       </h1>
-      <div
-        style={{ backgroundImage: `url(${slides[currentSlide]})` }}
-        className="lg:w-[50vw] lg:h-[60vh] w-[90vw] h-[80vh] rounded-2xl bg-center bg-no-repeat bg-contain duration-500  "
-      ></div>
-      <div className=" hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[-50%] lg:left-[250px] text-2xl rounded-full p-2 bg-black/20 text-[#f5ca66] cursor-pointer ]  ">
+      <div className="relative w-full p-4 h-full lg:w-[50vw] lg:h-[60vh]">
+        <div
+          style={{ backgroundImage: `url(${slides[currentSlide]})` }}
+          className="w-full h-full  bg-center bg-no-repeat bg-contain duration-500"
+        ></div>
+        <div className="hidden top-[50%] -translate-y-1/2 left-4 text-2xl rounded-full p-2 bg-black/20 text-[#f5ca66] cursor-pointer lg:hidden">
+          <BsChevronCompactLeft onClick={prevSlide} size={30} />
+        </div>
+        <div className="hidden top-[50%] -translate-y-1/2 right-4 text-2xl rounded-full p-2 bg-black/20 text-[#f5ca66] cursor-pointer lg:hidden">
+          <BsChevronCompactRight onClick={nextSlide} size={30} />
+        </div>
+      </div>
+      <div className="hidden lg:block absolute top-[50%] -translate-y-1/2 lg:left-[250px] text-2xl rounded-full p-2 bg-black/20 text-[#f5ca66] cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
-
-      <div className=" hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[-50%] lg:right-[250px] text-2xl rounded-full p-2 bg-black/20 text-[#f5ca66] cursor-pointer ]  ">
+      <div className="hidden lg:block absolute top-[50%] -translate-y-1/2 lg:right-[250px] text-2xl rounded-full p-2 bg-black/20 text-[#f5ca66] cursor-pointer">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
       <div className="flex absolute bottom-40 lg:bottom-[50px] text-white z-20">
@@ -56,7 +63,7 @@ const Carousel = () => {
           <div
             key={idx}
             onClick={() => goTo(idx)}
-            className="text-2xl cursor-pointer  "
+            className="text-2xl cursor-pointer"
           >
             <RxDotFilled />
           </div>

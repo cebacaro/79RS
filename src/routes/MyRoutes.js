@@ -1,15 +1,15 @@
 import React from "react";
 import { Routes, Route, HashRouter } from "react-router-dom";
-import Home from "../components/Home.js";
-import Header from "../components/Header.js";
-import Carousel from "../components/Carousel.js";
-import About from "../components/About.js";
-import Contact from "../components/Contact.js";
-import Press from "../components/Press.js";
-import Shows from "../components/Shows.js";
+import Home from "../components/Home";
+import Header from "../components/Header";
+import Carousel from "../components/Carousel";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Press from "../components/Press";
+import Shows from "../components/Shows";
 
 const MyRoutes = () => {
-return (
+  return (
     <HashRouter>
       <div className="h-screen m-0 ">
         <div className="h-[100vh] flex flex-col ">

@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react";
 import logo from "../images/logo.png";
 
-
-
 const Home = () => {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
 
   useEffect(() => {
-  
     if (isFirstLoad) {
       setTimeout(() => {
         setIsFirstLoad(false);
-      }, 2000); 
+      }, 2000);
     }
   }, [isFirstLoad]);
   // const [token, setToken] = useState(null);
@@ -61,12 +58,14 @@ const Home = () => {
 
   return (
     <div className="home bg-gradient-to-b from-[#832388]  to-[#E3436B]  h-[95vh] flex flex-col text-gray-500 text-center relative justify-center">
-     <img
-        className={`lg:w-[50vw] lg:h-[50vh] w-[70vw] h-[47vh]  pt-10 justify-center self-center ${isFirstLoad ? 'fade-in' : 'my-element'}`}
+      <img
+        className={`lg:w-[50vw] lg:h-[50vh] w-[350px] justify-center self-center ${
+          isFirstLoad ? "fade-in" : "my-element"
+        }`}
         src={logo}
         alt="Logo"
       />
-  
+
       <div className=" active: mt-8 flex absolute justify-center"></div>
     </div>
   );
